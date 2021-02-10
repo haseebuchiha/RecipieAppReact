@@ -22,7 +22,6 @@ class Api::V1::RecipesController < ApplicationController
   end
 
   def destroy
-    byebug
     recipe&.destroy
     render json: {message: 'Recipe deleted!'}
   end
